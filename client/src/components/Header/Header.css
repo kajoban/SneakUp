@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #101010;
+}
+
+.inner-header {
+  width: 70%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-container {
+  height: 100%;
+  display: table; /* for easy vertical alignment */
+  float: left;
+}
+
+.logo-container h1 {
+  color: white;
+  height: 100%;
+  display: table-cell; /* for easy vertical alignment */
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.logo-container h1 span {
+  font-weight: 700;
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-weight: 400;
+}
