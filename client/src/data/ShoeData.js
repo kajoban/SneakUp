@@ -1,5 +1,5 @@
 export default {
-  data: [
+  shoes: [
     {
       name: "Nike Court Vintage Premium, size 9.5",
       price: "$95",

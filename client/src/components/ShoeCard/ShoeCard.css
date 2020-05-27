@@ -1,0 +1,23 @@
+.shoe-card {
+  margin: 50px;
+  width: 33%;
+}
+
+.shoe-picture {
+  width: 100%;
+}
+
+.top-row {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.bottom-row {
+  display: table;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.bottom-column {
+  display: table-cell;
+}
