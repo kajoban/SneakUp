@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header/Header";
+import ShoeData from "../../data/ShoeData";
 
 class Timeline extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class Timeline extends React.Component {
   }
 
   componentDidMount() {
-    console.log("mounted");
+    console.log(ShoeData);
   }
 
   render() {

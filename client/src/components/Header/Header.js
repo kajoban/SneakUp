@@ -7,7 +7,7 @@ const Header = (props) => {
       <div className="inner-header">
         <div className="logo-container">
           <h1>
-            Sneaker<span>Up</span>
+            Sneak<span>Up</span>
           </h1>
         </div>
         <ul className="navigation">
