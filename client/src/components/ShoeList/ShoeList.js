@@ -1,5 +1,6 @@
 import React from "react";
 import ShoeCard from "../ShoeCard/ShoeCard";
+import "./ShoeList.css";
 
 const ShoeList = (props) => {
   return (
