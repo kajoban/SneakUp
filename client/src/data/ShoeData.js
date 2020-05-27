@@ -41,11 +41,19 @@ export default {
       isFaved: false,
     },
     {
+      name: "Nike SB Shane, size 9",
+      price: "$225",
+      bids: "3",
+      pic:
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfe1a6ea-e68d-47f0-b492-4cd7c2f59d1f/sb-shane-skate-shoe-SwgQFL.jpg",
+      isFaved: false,
+    },
+    {
       name: "Nike Air Max IVO, size 10",
       price: "$140",
       bids: "1",
       pic:
-        "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ndfbpzstq3aildfh6gv5/air-max-97-shoe-z3TlrlVN.jpg",
+        "https://c.static-nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/hugxf21bdyogkwdnkngh/air-max-ivo-shoe-MkTmERnm.jpg",
       isFaved: false,
     },
     {
