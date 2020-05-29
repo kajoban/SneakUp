@@ -1,4 +1,14 @@
+img {
+  width: 300px;
+  height: 300px;
+}
+
 .shoe-card {
   margin: 25px;
   width: 100%;
+  max-width: 300px;
+}
+
+.bookmark-icon {
+  float: right;
 }

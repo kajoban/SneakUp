@@ -1,11 +1,13 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./ShoeCard.css";
 
 const ShoeCard = (props) => {
   return (
     <div className="shoe-card">
       <div className="shoe-picture">
-        <img src={props.shoe.pic} width="350px" height="350px" />
+        <img src={props.shoe.pic} />
       </div>
       <div className="top-row">
         <div className="shoe-name">{props.shoe.name}</div>
@@ -13,7 +15,12 @@ const ShoeCard = (props) => {
       </div>
       <div className="bottom-row">
         <div className="shoe-price bottom-column">
-          {props.shoe.price + ", " + props.shoe.bids + " bids"}
+          {props.shoe.price + " (" + props.shoe.bids + " bids)"}
+          <FontAwesomeIcon
+            icon={faBookmark}
+            className="bookmark-icon"
+            color="lightgrey"
+          />
         </div>
       </div>
     </div>
