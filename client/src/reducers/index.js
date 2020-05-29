@@ -1,18 +1,11 @@
-import { ADD_DATA } from "../constants/action-types";
+import ShoeData from "../data/ShoeData";
 
 const initialState = {
-  data: [],
+  shoes: ShoeData.shoes,
 };
 
 const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD_DATA:
-      return {
-        data: action.data,
-      };
-    default:
-      return state;
-  }
+  return state;
 };
 
 export default rootReducer;
