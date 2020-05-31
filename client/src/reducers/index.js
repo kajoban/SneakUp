@@ -5,7 +5,13 @@ const initialState = {
 };
 
 const rootReducer = (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case "TOGGLE_BOOKMARK":
+      console.log("toggle bookmark " + action.pic);
+      return state;
+    default:
+      return state;
+  }
 };
 
 export default rootReducer;

@@ -15,7 +15,7 @@ const Header = (props) => {
             <li>Home</li>
           </a>
           <a>
-            <li>Profile</li>
+            <li>Bookmarks</li>
           </a>
         </ul>
       </div>

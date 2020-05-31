@@ -6,7 +6,10 @@ const ShoeList = (props) => {
   return (
     <div className="shoe-list">
       {props.shoes.map((shoe) => (
-        <ShoeCard shoe={shoe} />
+        <ShoeCard
+          shoe={shoe}
+          toggleBookmark={() => props.toggleBookmark(shoe.pic)}
+        />
       ))}
     </div>
   );
