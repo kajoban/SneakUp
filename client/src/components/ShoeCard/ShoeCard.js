@@ -4,6 +4,9 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import "./ShoeCard.css";
 
 const ShoeCard = (props) => {
+  {
+    console.log(props.shoe.id + "  " + props.shoe.bookmarked);
+  }
   return (
     <div className="shoe-card">
       <div className="shoe-picture">
@@ -20,7 +23,7 @@ const ShoeCard = (props) => {
             onClick={props.toggleBookmark}
             icon={faBookmark}
             className="bookmark-icon"
-            color="lightgrey"
+            color={props.shoe.bookmarked ? "gold" : "lightgrey"}
           />
         </div>
       </div>

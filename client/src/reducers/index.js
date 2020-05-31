@@ -7,8 +7,19 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case "TOGGLE_BOOKMARK":
-      console.log("toggle bookmark " + action.id);
-      return state;
+      return {
+        ...state,
+        shoes: state.shoes.map((shoe) => {
+          if (shoe.id !== action.id) {
+            return shoe;
+          } else {
+            return {
+              ...shoe,
+              bookmarked: !shoe.bookmarked,
+            };
+          }
+        }),
+      };
     default:
       return state;
   }

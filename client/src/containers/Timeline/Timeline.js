@@ -10,7 +10,7 @@ class Timeline extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props.shoes);
+    console.log(typeof this.props.shoes);
   }
 
   render() {
