@@ -7,7 +7,7 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case "TOGGLE_BOOKMARK":
-      console.log("toggle bookmark " + action.pic);
+      console.log("toggle bookmark " + action.id);
       return state;
     default:
       return state;

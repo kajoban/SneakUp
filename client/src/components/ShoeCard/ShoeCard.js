@@ -16,13 +16,12 @@ const ShoeCard = (props) => {
       <div className="bottom-row">
         <div className="shoe-price bottom-column">
           {props.shoe.price + " (" + props.shoe.bookmarks + " bookmarks)"}
-          <div onClick={props.toggleBookmark}>
-            <FontAwesomeIcon
-              icon={faBookmark}
-              className="bookmark-icon"
-              color="lightgrey"
-            />
-          </div>
+          <FontAwesomeIcon
+            onClick={props.toggleBookmark}
+            icon={faBookmark}
+            className="bookmark-icon"
+            color="lightgrey"
+          />
         </div>
       </div>
     </div>

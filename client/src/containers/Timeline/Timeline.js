@@ -5,15 +5,12 @@ import ShoeList from "../../components/ShoeList/ShoeList";
 import toggleBookmark from "../../actions/index";
 
 class Timeline extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
-    this.state = {
-      shoes: props.shoes,
-    };
   }
 
   componentDidMount() {
-    console.log(this.state.shoes);
+    console.log(this.props.shoes);
   }
 
   render() {
@@ -21,7 +18,7 @@ class Timeline extends React.Component {
       <>
         <Header />
         <ShoeList
-          shoes={this.state.shoes}
+          shoes={this.props.shoes}
           toggleBookmark={this.props.toggleBookmark}
         />
       </>
@@ -30,7 +27,7 @@ class Timeline extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  toggleBookmark: (pic) => dispatch(toggleBookmark(pic)),
+  toggleBookmark: (id) => dispatch(toggleBookmark(id)),
 });
 
 const mapStateToProps = (state) => ({

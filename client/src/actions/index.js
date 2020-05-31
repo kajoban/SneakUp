@@ -1,8 +1,8 @@
 /* action creators go here */
 
-export const toggleBookmark = (pic) => ({
+export const toggleBookmark = (id) => ({
   type: "TOGGLE_BOOKMARK",
-  pic,
+  id,
 });
 
 export default toggleBookmark;
