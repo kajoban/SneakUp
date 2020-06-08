@@ -1,3 +1,3 @@
 # SneakUp
 
-👣 A responsive sneaker auction site, built with React, Redux, and Flexbox.
+👣 A responsive site to showcase your sneakers. Built with React, Redux, and CSS Grid.
